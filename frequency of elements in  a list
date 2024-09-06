@@ -1,0 +1,18 @@
+def element_frequency(lst): 
+    frequency_dict = {} 
+     
+    for item in lst: 
+        if item in frequency_dict: 
+            frequency_dict[item] += 1 
+        else: 
+            frequency_dict[item] = 1 
+     
+    return frequency_dict 
+ 
+# Example usage: 
+my_list = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4] 
+result = element_frequency(my_list) 
+ 
+# Print the frequency of each element 
+for item, count in result.items(): 
+    print(f"{item}: {count} times")

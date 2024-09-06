@@ -1,0 +1,9 @@
+# Create a list of tuples 
+list_of_tuples = [(1, 'a'), (2, 'b'), (3, 'c')] 
+ 
+# Unzip the list of tuples into individual lists 
+numbers, letters = zip(*list_of_tuples) 
+ 
+# Print the individual lists 
+print("Numbers:", numbers) 
+print("Letters:", letters)

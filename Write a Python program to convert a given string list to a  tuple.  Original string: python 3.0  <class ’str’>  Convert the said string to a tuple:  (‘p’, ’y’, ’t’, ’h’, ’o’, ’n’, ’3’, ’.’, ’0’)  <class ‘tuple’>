@@ -1,0 +1,21 @@
+CODE:
+# Original string 
+original_string = "python 3.0" 
+ 
+# Convert the string to a tuple of characters 
+char_tuple = tuple(original_string) 
+ 
+# Print the original string's class type 
+print("Original string:", original_string) 
+print("Class type of the original string:", type(original_string)) 
+ 
+# Print the converted tuple 
+print("Convert the said string to a tuple:", char_tuple) 
+print("Class type of the converted tuple:", type(char_tuple))
+
+OUTPUT: 
+Original string: python 3.0 
+Class type of the original string: <class 'str'> 
+Convert the said string to a tuple: ('p', 'y', 't', 'h', 'o', 'n', ' ', '3', 
+'.', '0') 
+Class type of the converted tuple: <class 'tuple'> 

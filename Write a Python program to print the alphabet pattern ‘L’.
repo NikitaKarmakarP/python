@@ -1,0 +1,21 @@
+CODE: 
+# Define the height of the 'L' pattern 
+height = 7 
+ 
+# Iterate through rows 
+for i in range(height): 
+    # Print '*' for the first 6 rows 
+    if i < height - 1: 
+        print("*") 
+    # Print '*****' for the last row 
+    else: 
+        print("*" * 5) 
+ 
+OUTPUT: 
+* 
+* 
+* 
+* 
+* 
+* 
+*****

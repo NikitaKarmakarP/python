@@ -1,0 +1,12 @@
+def insert_before_each_element(lst, element_to_insert): 
+    new_list = [] 
+    for item in lst: 
+        new_list.append(element_to_insert) 
+        new_list.append(item) 
+    return new_list 
+ 
+# Example usage: 
+my_list = [1, 2, 3, 4, 5] 
+element_to_insert = 0 
+result = insert_before_each_element(my_list, element_to_insert) 
+print("List after inserting the element before each element:", result) 

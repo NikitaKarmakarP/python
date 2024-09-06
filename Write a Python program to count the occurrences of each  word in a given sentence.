@@ -1,0 +1,32 @@
+# Function to count word occurrences in a text 
+def count_word_occurrences(text): 
+    # Split the text into words 
+    words = text.split() 
+     
+    # Create an empty dictionary to store word counts 
+    word_counts = {} 
+     
+    # Iterate through the words and count occurrences 
+    for word in words: 
+        # Remove punctuation and convert to lowercase for 
+consistency 
+        word = word.strip('.,!?()[]{}"\'').lower() 
+         
+        if word: 
+            if word in word_counts: 
+                word_counts[word] += 1 
+            else: 
+                word_counts[word] = 1 
+     
+    return word_counts 
+ 
+# Sample text 
+text = "This is a sample text. This text contains some sample 
+words. Words in the text need to be counted." 
+ 
+# Count word occurrences in the sample text 
+word_occurrences = count_word_occurrences(text) 
+ 
+# Print the word occurrences 
+for word, count in word_occurrences.items(): 
+    print(f"'{word}': {count} times") 

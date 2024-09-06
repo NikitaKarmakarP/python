@@ -1,0 +1,22 @@
+def count_character_frequency(input_str): 
+    # Create an empty dictionary to store character frequencies 
+    char_frequency = {} 
+     
+    # Iterate through the characters in the input string 
+    for char in input_str: 
+        # Check if the character is already in the dictionary 
+        if char in char_frequency: 
+            # Increment the character's frequency by 1 
+            char_frequency[char] += 1 
+        else: 
+         # Add the character to the dictionary with a frequency of 1 
+         char_frequency[char] = 1 
+     
+    return char_frequency 
+ 
+# Input string 
+input_string = "google.com" 
+ 
+# Call the function and print the result 
+result = count_character_frequency(input_string) 
+print("Character frequency:", result)

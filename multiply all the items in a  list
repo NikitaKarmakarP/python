@@ -1,0 +1,10 @@
+def multiply_list_items(lst): 
+    result = 1  # Initialize the result to 1 
+    for item in lst: 
+        result *= item 
+    return result 
+ 
+# Example usage: 
+my_list = [1, 2, 3, 4, 5] 
+result = multiply_list_items(my_list) 
+print("Product of the list items:", result)

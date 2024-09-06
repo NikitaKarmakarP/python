@@ -1,0 +1,12 @@
+def is_empty(lst): 
+    if len(lst) == 0: 
+        return True 
+    else: 
+        return False 
+ 
+# Example usage: 
+my_list = [] 
+if is_empty(my_list): 
+    print("The list is empty.") 
+else: 
+    print("The list is not empty.")

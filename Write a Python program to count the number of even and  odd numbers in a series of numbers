@@ -1,0 +1,18 @@
+# Sample numbers 
+numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9) 
+ 
+# Initialize counters for even and odd numbers 
+even_count = 0 
+odd_count = 0 
+ 
+# Iterate through the numbers and count even and odd 
+numbers 
+for num in numbers: 
+    if num % 2 == 0: 
+        even_count += 1 
+    else: 
+        odd_count += 1 
+ 
+# Print the counts 
+print("Number of even numbers:", even_count) 
+print("Number of odd numbers:", odd_count) 

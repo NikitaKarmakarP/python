@@ -1,0 +1,22 @@
+CODE: 
+# Initialize the first two terms of the Fibonacci sequence 
+fibonacci_series = [0, 1] 
+ 
+# Generate Fibonacci numbers until the next number exceeds 
+50 
+while True: 
+    next_fibonacci = fibonacci_series[-1] + fibonacci_series[-2] 
+     
+    if next_fibonacci > 50: 
+        break 
+     
+    fibonacci_series.append(next_fibonacci) 
+ 
+# Print the Fibonacci series 
+print("Fibonacci series between 0 and 50:") 
+for num in fibonacci_series: 
+    print(num, end=" ") 
+ 
+OUTPUT: 
+Fibonacci series between 0 and 50: 
+0 1 1 2 3 5 8 13 21 34 

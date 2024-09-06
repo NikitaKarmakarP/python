@@ -1,0 +1,8 @@
+# Create a tuple 
+my_tuple = ('Hello', 'World', '!') 
+ 
+# Convert the tuple elements to a single string 
+result_string = ' '.join(map(str, my_tuple)) 
+ 
+# Print the resulting string 
+print("Tuple as a string:", result_string)

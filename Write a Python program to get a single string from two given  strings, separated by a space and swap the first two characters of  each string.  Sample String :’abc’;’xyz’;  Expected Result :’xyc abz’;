@@ -1,0 +1,24 @@
+CODE: 
+# Accept input from the user 
+input_str = input("Enter two strings separated by a semicolon (;): ") 
+ 
+# Split the input into two strings based on the semicolon 
+str_list = input_str.split(';') 
+ 
+# Ensure we have two strings 
+if len(str_list) == 2: 
+    # Swap the first two characters of each string 
+    first_str = str_list[0][:2] + str_list[1][2:] 
+    second_str = str_list[1][:2] + str_list[0][2:] 
+     
+    # Join the swapped strings with a space 
+    result_str = first_str + ' ' + second_str 
+     
+    # Print the result 
+    print("Swapped strings separated by a space:", result_str) 
+else: 
+    print("Please enter two strings separated by a semicolon.") 
+ 
+OUTPUT: 
+Enter two strings separated by a semicolon (;): abc;xyz 
+Swapped strings separated by a space: xyc abz

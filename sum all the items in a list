@@ -1,0 +1,10 @@
+def sum_list_items(lst): 
+    total = 0 
+    for item in lst: 
+        total += item 
+    return total 
+ 
+# Example usage: 
+my_list = [1, 2, 3, 4, 5] 
+result = sum_list_items(my_list) 
+print("Sum of the list items:", result) 

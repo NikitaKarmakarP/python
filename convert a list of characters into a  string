@@ -1,0 +1,15 @@
+def list_to_string(char_list): 
+    # Initialize an empty string 
+    result_string = '' 
+     
+    # Iterate through the characters and concatenate them to 
+the string 
+    for char in char_list: 
+        result_string += char 
+     
+    return result_string 
+ 
+# Example usage: 
+char_list = ['N', 'i', 'k', 'i', 't', 'a'] 
+result = list_to_string(char_list) 
+print("List converted to string:", result) 

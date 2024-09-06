@@ -1,0 +1,18 @@
+CODE: 
+# Accept input from the user 
+input_str = input("Enter a comma-separated sequence of words: ") 
+ 
+# Split the input by commas, remove duplicates, and sort alphabetically 
+words = sorted(set(input_str.split(','))) 
+ 
+# Convert the sorted words back to a string 
+result_str = ', '.join(words) 
+ 
+# Print the distinct words in sorted form 
+print("Distinct words in sorted form:", result_str) 
+ 
+ 
+OUTPUT: 
+Enter a comma-separated sequence of words: red, white, black, red, 
+green, black 
+Distinct words in sorted form:  black,  green,  red,  white

@@ -1,0 +1,20 @@
+def replace_first_char_occurrences(input_str): 
+    if len(input_str) < 2: 
+        return input_str  # If the string has only one character, no 
+replacements needed 
+     
+    first_char = input_str[0]  # Get the first character 
+     
+    # Replace occurrences of the first character with '$', starting 
+from the second character 
+    modified_str = first_char + input_str[1:].replace(first_char, 
+'$') 
+     
+    return modified_str 
+ 
+# Input string 
+input_string = "restart" 
+ 
+# Call the function and print the result 
+result_string = replace_first_char_occurrences(input_string) 
+print("Modified string:", result_string) 

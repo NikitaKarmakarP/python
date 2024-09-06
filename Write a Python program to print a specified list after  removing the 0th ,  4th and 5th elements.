@@ -1,0 +1,13 @@
+def remove_elements(lst, indices_to_remove): 
+    filtered_list = [lst[i] for i in range(len(lst)) if i not in 
+indices_to_remove] 
+    return filtered_list 
+ 
+# Sample list 
+sample_list = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow'] 
+ 
+# Indices to remove (0-based) 
+indices_to_remove = [0, 4, 5] 
+result_list = remove_elements(sample_list, 
+indices_to_remove) 
+print("List after removing specified elements:", result_list)
